@@ -1,0 +1,204 @@
+<!-- <!DOCTYPE html> -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <base href="" target="-blank"> -->
+    <link href="style.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <head>
+
+        <div class="navbar">
+            <h1 class="topText"> Start Visiting...</h1>
+            <a class="topLink" href="#SignUpForm" onclick="SignUpFunc()"><button class="topButton">Sign Up</button></a>
+
+        </div>
+
+
+        <div class="divapage">
+            <div class="headholder">
+                <h1 class="header">Wellcome to this landing page...!</h1>
+            </div>
+            <div class="boxHolder">
+                <input class="box" type="text" placeholder="   Search...">
+            </div>            
+        </div>
+        
+    </head>
+
+
+        <div class="iconHolder">
+            <figure class="figure">
+                <img src="img/support.svg" alt="support">
+                <br><br>
+                <h3 class="title">Full Backup</h3>
+                <br>
+                <figcaption class="caption">Our team will always answer your questians!</figcaption>
+            </figure>
+
+            <figure class="figure">
+                <img src="img/verified.svg" alt="verified">
+                <br><br>
+                <h3 class="title">Valid certificate</h3>
+                <br>
+                <figcaption class="caption">Our collection is completely valid and under the supervision of the Ministry!</figcaption>
+            </figure>
+
+            <figure class="figure">
+                <img src="img/star.svg" alt="star">
+                <br><br>
+                <h3 class="title">The Best</h3>
+                <br>
+                <figcaption class="caption">Belive me! <br>You cant find another better than us.</figcaption>
+            </figure>
+        </div>
+
+
+        <div class="gallery">
+
+            <div class="part1">
+                <div class="textpart">
+                    <h1>Show your heart some loving</h1>
+                    <br>
+                    <p>People who run for just 5 to 10 minutes a day can reduce their risk of dying from cardiovascular disease.
+                        And for those already hitting the recommended physical activity guidelines , an extra spurt of exercise can lower your risk of heart disease even further.</p>
+                </div>
+                <div class="picpart">
+                    <img class="image" src="img/Cross-Country-Running-3.jpg" alt="runner-man">
+                </div>
+
+            </div>
+
+            <div class="part2">
+        
+                <div class="picpart">
+                    <img class="image" src="img/camo.jfif" alt="campFire">
+                </div>
+
+                <div class="textpart">
+                    <h1>Socialization</h1>
+                    <br>
+                    <p>Camping alone is plenty of fun, but if you bring along a friend or family member, you'll enjoy a unique experience together that will help you keep a healthy, happy relationship.<br>
+                         Socializing can extend your lifespan and delay memory problems according to researchs.</p>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <h1 class="what">What people are saying...</h1>
+
+        <div class="people">
+
+            <figure class="peopleBox">
+                <img class="face" src="img/face/boy.jfif" alt="face">
+                <br>
+                <h3 class="name">Steve R.</h3>
+                <figcaption>"It was very fun..!<br> and I think everyone should try that"</figcaption>
+            </figure>
+
+            <figure class="peopleBox">
+                <img class="face" src="img/face/1.jpg" alt="face">
+                <br>
+                <h3 class="name">Hana S.</h3>
+                <figcaption>"It was such a great exprement..!"</figcaption>
+            </figure>
+
+            <figure class="peopleBox">
+                <img class="face" src="img/face/3.jfif" alt="face">
+                <br>
+                <h3 class="name">Diana Q.</h3>
+                <figcaption>"Well, I realy enjoy that."</figcaption>
+            </figure>
+
+            <figure class="peopleBox">
+                <img class="face" src="img/face/man1.jfif" alt="face">
+                <br>
+                <h3 class="name">Albert E.</h3>
+                <figcaption>"It was one of my best vacation i've ever went in my hole life !! "</figcaption>
+            </figure>
+
+        </div>
+
+        <div class="dark">
+            
+            <div id="formHolder">
+                <form id="SignInForm" onsubmit="return false;" >
+                    <fieldset>                
+                        <h1 class="formTitle">Sign In</h1>
+                        <br>
+                                <div class="user fields">
+                                    <span id="iconm" class="fa fa-user"></span>
+                                    <input class="inputbox" type="username" placeholder="First Name" onfocus="InputFocusFunc()" >
+                                </div>
+        
+                                <div class="user fields">
+                                    <span id="iconm" class="fa fa-user"></span>
+                                    <input class="inputbox" type="text"  placeholder="Last Name" onfocus="InputFocusFunc()" >
+                                </div>
+        
+                                <div class="user fields">
+                                    <span id="iconm" class="fa fa-user"></span>
+                                    <input class="inputbox" type="email"  placeholder="Em@il" onfocus="InputFocusFunc()" >
+                                </div>
+                                
+                                <div class="user fields Error">
+                                    <span id="iconm" class="fa fa-user"></span>
+                                    <input class="inputbox" id="passWord" type="password"  placeholder="PassWord" onfocus="InputFocusFunc()" onkeypress="passwordCountFun()" >
+                                    <span id="passWordError"></span>
+                                </div>
+        
+                        <button class="endButton formBtton"  id="signIn" onclick="SignInFunc()" >Sign In</button>
+                        <button class="endButton formBtton"  id="signUp" onclick="SignUpFunc()" >Sign Up</button>
+                    </fieldset>
+                </form>
+             <!------------------------------------------------------------------------------------------->
+                <form id="SignUpForm" style="display: none;">
+                    <fieldset >                
+                        <h1 class="formTitle">Sign Up to join us!</h1>
+                        <br>
+                        <div class="user fields">
+                            <span id="iconm" class="fa fa-user"></span>
+                            <input class="inputbox" type="username" placeholder="First Name" onfocus="InputFocusFunc()" >
+                        </div>
+
+                        <div class="user fields">
+                            <span id="iconm" class="fa fa-user"></span>
+                            <input class="inputbox" type="text"  placeholder="Last Name" onfocus="InputFocusFunc()" >
+                        </div>
+
+                        <div class="user fields">
+                            <span id="iconm" class="fa fa-user"></span>
+                            <input class="inputbox" id="passWord" type="password"  placeholder="PassWord" onfocus="InputFocusFunc()" >
+                        </div>
+                        <br>
+                        <button class="endButton formBtton" id="signUp" onclick="signUpFunc()" >Sign Up</button>
+                        <button class="endButton formBtton" id="signIn" onclick="signInFunc()" >Sign In</button>               
+                    </fieldset>
+                </form>
+            </div>
+   
+         </div>
+
+
+         <div class="endPart">
+
+            <p class="text1">© 2021 Eli Made this site  | All rights reserved.</p>
+    
+            <div class="links">
+                <a class="linktext" href="#"> Privacy Policy </a>
+                <p class="line">|</p>
+                <a class="linktext" href="#">Terms of Use</a>
+                <p class="line">|</p>
+                <a class="linktext" href="#"> Email Us</a>
+            </div>
+
+         </div>
+
+</body>
+<script src="JS.js"></script>
+</html>
